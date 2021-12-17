@@ -19,19 +19,65 @@
 
 
     <title>React App</title>
+
+    <style>
+
+      .splash{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #167BD8;
+        position: relative;
+      }
+
+      .line{
+        position: absolute;
+        bottom: 10px;
+        width: 40vw;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 50px;
+      }
+
+      .splash-image{
+        width: 80px;
+        margin-top: -20vh;
+      }
+
+    </style>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="loader" class="splash" >
+      <img class="splash-image" src="%PUBLIC_URL%/assets/images/logo-1.svg"></img>
+      <div class="line"></div>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        var loader = document.querySelector("#loader");
+        loader.style.background = '#167BD8'
+        var root = document.querySelector("#root");
+        root.style.display = "none";
+        function docReady(fn) {
+            if (document.readyState === "complete" || document.readyState === "interactive") {
+                fn()
+            } else {
+                document.addEventListener("DOMContentLoaded", fn);
+            }
+        }
+        docReady(function() {
+            var loader = document.querySelector("#loader");
+            var root = document.querySelector("#root");
+            setTimeout(function(){
+              loader.style.display = "none";
+              root.style.display = "";
+            }, 2000)
+        });
+    </script>
   </body>
 </html>

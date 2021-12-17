@@ -5,6 +5,7 @@ import {useSelector, shallowEqual} from 'react-redux'
 import {Route, Switch} from 'react-router-dom'
 
 import 'antd/dist/antd.variable.min.css';
+import Intro from './pages/intro/Intro';
 
 
 function App() {
@@ -23,7 +24,11 @@ function App() {
   return (
     <div className="App">
       <ConfigProvider direction={direction} >
-        
+          <Switch>
+
+              <Route path={'/intro'} component={Intro} />
+
+          </Switch>
       </ConfigProvider>
     </div>
   );
