@@ -66,6 +66,7 @@ function Verify(props){
             localStorage.setItem('access_token', result.access_token);
             localStorage.setItem('idn', result.email);
             setLoading(false)
+            history.push('/auth/connect')
         } catch (error) {
             setLoading(false)
             HandleErrors(error)

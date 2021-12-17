@@ -1,0 +1,77 @@
+@import './../../../theme/variables.scss';
+
+.Connect{
+    min-height: 100vh;
+    background-color: $primary-background-color;
+    .header-box{
+        min-height: 30vh;
+        padding: 0 20px;
+        padding-top: 15px;
+
+        .back-icon-box{
+            .icon{
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+
+        .title-box{
+            margin-top: 15px;
+            .image{
+                width: 100%;
+                margin-top: -5px;
+            }
+    
+            .title{
+                font-size: 1.8em;
+                font-weight: 500;
+            }
+    
+        }
+        
+        .desc-box{
+            margin-top: 20px;
+            .desc{
+                color: $secondary-text-color;
+                font-weight: 400;
+    
+            }
+        }
+
+    }
+
+    
+
+    .content-box{
+        background-color: $secondary-background-color ;
+        height: 70vh;
+        -webkit-box-shadow: 0px -10px 34px 0px rgba(87,87,87,0.15);
+        -moz-box-shadow: 0px -10px 34px 0px rgba(87,87,87,0.15);
+        box-shadow: 0px -10px 34px 0px rgba(87,87,87,0.15);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 30px;
+        position: relative;
+        
+    }
+
+    .image-box{
+
+        .image{
+            width: 100%;
+        }
+    }
+
+
+    .btn-box{
+        position: absolute;
+        bottom: 5vh;
+        width: 100%;
+        .btn{
+            border-radius: 30px;
+            height: 44px !important;
+            font-weight: 500 !important;
+            font-size: 1.1em;
+        }
+    }
+}

@@ -1,6 +1,5 @@
 import axios from "axios";
 import { getUUID } from "../utils/UUID";
-import { store } from "../redux/store/store";
 
 export let backendAPi = axios.create();
 export let horizonAPi = axios.create();
@@ -11,15 +10,13 @@ horizonAPi.interceptors.request.use(async (config) => {
 });
 
 backendAPi.interceptors.request.use(async (config) => {
-	let state = store.getState();
 	config.baseURL = window.env.base_url;
 	config.headers = {
 		"Platform-Version": window.env.platform_Version,
 		"Device-Id": getUUID(),
-		Authorization: localStorage.getItem("accessToken"),
-		"accept-language":
-			localStorage.getItem("language") === "en" ? "en-us" : "fa-ir",
-		public: state.User.publicKey,
+		Authorization: 'Baerer '+localStorage.getItem("access_token"),
+		"accept-language": localStorage.getItem("language") === "en" ? "en-us" : "fa-ir",
+		"publickey": localStorage.getItem("publickey"),
 	};
 	return config;
 });

@@ -26,4 +26,15 @@ export class AuthService{
             });
         })
     }
+
+    newFederation(data){
+        return new Promise((resolve, reject)=>{
+            BackendApi.post('/authorization/federation',data)
+            .then((result) => {
+                resolve(result)
+            }).catch((err) => {
+                reject(err)
+            });
+        })
+    }
 }

@@ -46,6 +46,15 @@ export const languages = {
     },
     enter_verify_code:{
         fa: 'کد تایید را وارد کنید'
+    },
+    connect_to_wallet:{
+        fa: 'اتصال به کیف پول'
+    },
+    connect_to_wallet_desc:{
+        fa: 'ابتدا به کیف پول خود متصل شوید'
+    },
+    connect:{
+        fa: 'اتصال'
     }
 
 
