@@ -1,0 +1,130 @@
+@import './../.././../theme/variables.scss';
+
+.Verify{
+    min-height: 100vh;
+    background-color: $primary-background-color;
+    .header-box{
+        min-height: 30vh;
+        padding: 0 20px;
+        padding-top: 15px;
+
+        .back-icon-box{
+            .icon{
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+
+        .title-box{
+            margin-top: 15px;
+            .image{
+                width: 100%;
+                margin-top: -5px;
+            }
+    
+            .title{
+                font-size: 1.8em;
+                font-weight: 500;
+            }
+    
+        }
+        
+        .desc-box{
+            margin-top: 20px;
+            .desc{
+                color: $secondary-text-color;
+                font-weight: 400;
+    
+            }
+        }
+
+    }
+
+    
+
+    .content-box{
+        background-color: $secondary-background-color ;
+        height: 70vh;
+        -webkit-box-shadow: 0px -10px 34px 0px rgba(87,87,87,0.15);
+        -moz-box-shadow: 0px -10px 34px 0px rgba(87,87,87,0.15);
+        box-shadow: 0px -10px 34px 0px rgba(87,87,87,0.15);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 30px;
+        position: relative;
+        
+    }
+
+
+    .input-container{
+        border: 2px solid #f1efef;
+        padding: 20px 20px;
+        border-radius: 30px;
+
+        .icon-box{
+            .icon{
+                color: $third-text-color;
+                font-size: 2em;
+            }
+        }
+
+        .title-box{
+
+            .title{
+                color: $third-text-color;
+                font-size: 1em;
+                font-weight: 500;
+                margin: 0 5px;
+            }
+        }
+
+        .input-box{
+            margin-top: 10px;
+           
+            .input{
+                border: none !important;
+            }
+            .ant-input-focused, .ant-input:focus{
+                box-shadow: none !important;
+            }
+        }
+
+        
+    }
+
+    .counter-box{
+        position: absolute;
+        bottom: 15vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .icon{
+            color: $secondary-text-color;
+            font-size: 1.5em;
+        }
+        .time{
+            color: $secondary-text-color;
+            font-size: 1em;
+            font-weight: 400;
+            margin: 0 5px;
+            margin-top: 5px;
+        }
+    }
+
+    .btn-box{
+        position: absolute;
+        bottom: 5vh;
+        width: 100%;
+        .btn{
+            border-radius: 30px;
+            height: 44px !important;
+            font-weight: 500 !important;
+            font-size: 1.1em;
+        }
+    }
+    
+
+}

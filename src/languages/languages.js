@@ -22,6 +22,30 @@ export const languages = {
     },
     get_started:{
         fa: 'ثبت نام'
+    },
+    login:{
+        fa: 'ورود'
+    },
+    login_desc:{
+        fa: 'ایمیل خود را وارد کنید و وارد حساب کاربری خود شوید'
+    },
+    email:{
+        fa: 'ایمیل'
+    },
+    enter_email:{
+        fa: 'ایمیل خود را وارد کنید'
+    },
+    submit:{
+        fa:'ثبت'
+    },
+    verify_code: {
+        fa: 'کد تایید'
+    },
+    verify_code_desc: {
+        fa: 'کد تایید ارسال شده به ایمیل خود را وارد کنید'
+    },
+    enter_verify_code:{
+        fa: 'کد تایید را وارد کنید'
     }
 
 

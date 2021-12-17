@@ -20,7 +20,7 @@ function Intro(props){
         }else if(step === 2){
             setStep(3)
         }else{
-            history.replace('/auth/register')
+            history.replace('/auth/login')
         }
     }
 
@@ -54,7 +54,7 @@ function Intro(props){
 
                 <Row justify='center'  className='btn-box'>
                     <Col  xs={{span: 20}}>
-                        <Button onClick={handleNext} className='btn' type='primary' block>{step === 3 ? languages.get_started[lang] : languages.continue[lang]}</Button>
+                        <Button onClick={handleNext} className='btn' type='primary' block>{step === 3 ? languages.login[lang] : languages.continue[lang]}</Button>
                     </Col>
                 </Row>
             </div>
