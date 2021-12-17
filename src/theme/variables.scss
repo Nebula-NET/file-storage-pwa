@@ -1,0 +1,32 @@
+
+
+:root{
+    --primary-color :  #167BD8;  //063678
+    --secondary-color : #167BD8; //d6435b
+    
+    --primary-background-color : #f5f5f5;
+    --secondary-background-color : #ffffff;
+
+    --primary-text-color : #000;
+    --secondary-text-color : #737373; //#8c96a6
+    --third-text-color : #999999;
+
+    --font : 'IRANSansFaNumber',
+
+}
+
+
+$primary-color : var(--primary-color);
+$secondary-color : var(--secondary-color);
+
+$primary-background-color : var(--primary-background-color);
+$secondary-background-color : var(--secondary-background-color);
+
+$primary-text-color : var(--primary-text-color);
+$secondary-text-color : var(--secondary-text-color);
+$third-text-color : var(--third-text-color);
+
+$font : var(--font);
+$font_enNumber : 'IRANSans';
+
+
