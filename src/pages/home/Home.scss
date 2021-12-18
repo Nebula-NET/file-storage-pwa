@@ -1,0 +1,120 @@
+@import './../../theme/variables.scss';
+
+.Home{
+
+    .header-box{
+        padding: 20px;
+
+        .icon-box{
+            background-color: rgba($color: #167BD8, $alpha: 0.2);
+            padding: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            .icon{
+               color: $primary-color;
+               font-size: 2em;
+            }
+
+           
+        }
+
+        .account-box{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            .icon{
+                color: $primary-color;
+                font-size: 1.5em;
+                margin: 0 5px;
+            }
+            .publickey{
+                font-weight: 400;
+                font-size: 0.8em;
+            }
+        }
+        
+    }
+
+    .search-box{
+        background-color: rgba($color: #323438, $alpha: 0.1);
+        border-radius: 30px;
+        margin: 0 20px;
+        padding: 5px;
+        .input-box{
+            .input{
+                border: none;
+                background-color: transparent;
+            }
+            .ant-input-focused, .ant-input:focus{
+                box-shadow: none !important;
+            }
+        }
+        .icon-box{
+            cursor: pointer;
+            .icon{
+                color: rgba($color: #323438, $alpha: 0.5);
+                font-size: 1.5em;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .image-box{
+        margin-top: 20px;
+        position: relative;
+        .image{
+            width: 100%;
+        }
+
+        .chart-box{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 80px;
+            width: 80px;
+
+            .chart{
+                
+            }
+
+            .ant-progress-inner{
+                height: 80px !important;
+                width: 80px !important;
+            }
+            .ant-progress-text{
+                color: #fff !important;
+                font-weight: 500;
+                font-size: 0.8em;
+            }
+
+        }
+        .info-box{
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            height: 80px;
+            width: 150px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            .title{
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 5px;
+            }
+
+            .value{
+                
+                font-size: 1em;
+                font-weight: 400;
+                color: #fff;
+                margin-bottom: 5px;
+            }
+
+        }
+    }
+}

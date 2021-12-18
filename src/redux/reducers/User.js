@@ -1,7 +1,7 @@
 import { SET_USER_INFO } from "../actions/types";
 
 const initialState = {
-    publickey : '',
+    publickey : localStorage.getItem('publickey') || '',
     storageLimit: '',
     storageUsed: ''
 }

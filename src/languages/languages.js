@@ -55,6 +55,15 @@ export const languages = {
     },
     connect:{
         fa: 'اتصال'
+    },
+    seach_file:{
+        fa: 'جست و جوی فایل'
+    },
+    internal_storage:{
+        fa: 'فضای ابری'
+    },
+    available:{
+        fa: 'در دسترس'
     }
 
 

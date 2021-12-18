@@ -10,6 +10,7 @@ import Intro from './pages/intro/Intro';
 import Login from './pages/auth/login/Login';
 import Verify from './pages/auth/verify/Verify';
 import Connect from './pages/auth/connect/Connect';
+import Home from './pages/home/Home';
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
   },[])
 
 
+
+
+
   return (
     <div className="App">
       <ConfigProvider direction={direction} >
@@ -33,12 +37,17 @@ function App() {
               <Route exact path={'/'} component={()=>{
                   const token = localStorage.getItem('access_token');
                   const publickey = localStorage.getItem('publickey');
-                  if(!publickey){
-
-                  }else if(token){
-                    return <Redirect to={'/auth/connect'} />
+                  // if(publickey){
+                  //   return <Redirect to={'/home'} />
+                  // }if(token){
+                  //   return <Redirect to={'/auth/connect'} />
+                  // }else{
+                  //   return <Redirect to={'/intro'} />
+                  // }
+                  if(token){
+                    return <Redirect to={'/home'} />
                   }else{
-                    return <Redirect to={'/intro'} />
+                    return <Redirect to={'/auth/connect'} />
                   }
                   
               }} />
@@ -46,6 +55,9 @@ function App() {
               <Route exact path={'/auth/login'} component={Login} />  
               <Route exact path={'/auth/verify'} component={Verify} />  
               <Route exact path={'/auth/connect'} component={Connect} />  
+
+
+              <Route exact path={'/home'} component={Home} />  
 
           </Switch>
       </ConfigProvider>

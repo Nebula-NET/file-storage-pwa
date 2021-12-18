@@ -16,6 +16,17 @@ export class AuthService{
         })
     }
 
+    getChallenge(data){
+        return new Promise((resolve, reject)=>{
+            BackendApi.post('/authorization/challenge',data)
+            .then((result) => {
+                resolve(result)
+            }).catch((err) => {
+                reject(err)
+            });
+        })
+    }
+
     login(data){
         return new Promise((resolve, reject)=>{
             BackendApi.post('/authorization/login',data)
